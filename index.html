@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@300&family=Modak&family=Monoton&family=Odibee+Sans&family=Open+Sans:wght@300&family=Oswald:wght@400;700&family=Pacifico&family=Yeseva+One&family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Danh sách nhân viên</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="body__left">
+        <div class="form">
+          <p>Họ và tên đệm</p>
+          <input class="form__hoVaTen" type="text" id="lastName" />
+          <p>Tên</p>
+          <input class="form__ten" type="text" id="name" />
+          <p>Tuổi</p>
+          <input class="form__tuoi" type="number" id="age" />
+          <p>Chức vụ</p>
+          <input class="form__chucVu" type="text" id="major" />
+          <p>Thời gian làm việc</p>
+          <input class="form__thoiGian" type="number" id="time" />
+          <button id="reset">Reset</button>
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+
+      <div class="body__right"></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
