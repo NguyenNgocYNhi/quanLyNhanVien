@@ -65,6 +65,7 @@ const check = () => {
 
 document.getElementById('submit').addEventListener('click', () => {
     check();
+    reset();
 })
 
 
