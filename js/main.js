@@ -1,4 +1,19 @@
 
+
+const reset = () => {
+    document.getElementById('lastName').value = "";
+    document.getElementById('name').value = "";
+    document.getElementById('age').value = "";
+    document.getElementById('major').value = "";
+    document.getElementById('time').value = "";
+}
+
+document.getElementById('reset').addEventListener('click', () => {
+    reset();
+})
+
+
+
 class thongTin {
     constructor (id,lastName,name,age,major,time) {
         this.id = id;
@@ -57,6 +72,7 @@ const check = () => {
             title: 'Oops...',
             text: 'Làm ơn nhập dữ liệu!',
           })
+        reset();
     }
     else {
         create();
@@ -69,14 +85,4 @@ document.getElementById('submit').addEventListener('click', () => {
 })
 
 
-const reset = () => {
-    document.getElementById('lastName').value = "";
-    document.getElementById('name').value = "";
-    document.getElementById('age').value = "";
-    document.getElementById('major').value = "";
-    document.getElementById('time').value = "";
-}
 
-document.getElementById('reset').addEventListener('click', () => {
-    reset();
-})
